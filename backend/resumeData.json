@@ -1,0 +1,67 @@
+{
+  "name": "Sunil Rana",
+  "title": "MCA Student & Full Stack Developer",
+  "education": [
+    {
+      "degree": "Masters of Computer Applications",
+      "institution": "Dayananda Sagar College of Engineering (DSCE), Bangalore",
+      "duration": "Aug 2023 – Present",
+      "cgpa": "8.96 / 10.00"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Excel Analysis Platform (MERN + ML)",
+      "latest": true,
+      "description": "Developed a full-stack MERN application to upload Excel files and provide insights, charts, summaries, row-level data, metadata, and analytics. Implemented JWT authentication with email-based password reset and integrated machine learning for advanced data insights.",
+      "tech": ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Machine Learning"]
+    },
+    {
+      "name": "Expense Tracker (MERN)",
+      "latest": false,
+      "description": "Built an end-to-end MERN expense tracker with JWT authentication, interactive dashboard, and category-based expense tracking.",
+      "tech": ["MongoDB", "Express.js", "React", "Node.js", "JWT"]
+    },
+    {
+      "name": "AI Chatbot (Gemini API)",
+      "latest": false,
+      "description": "Developed a chatbot feature with fresh conversation resets, chat history, and a responsive UI for an enhanced experience.",
+      "tech": ["React", "Gemini API", "Node.js", "Express.js"]
+    },
+    {
+      "name": "Diabetes Prediction (Machine Learning)",
+      "latest": false,
+      "description": "Trained ML models (Linear Regression, Multiple Regression, Polynomial Regression) to predict diabetes based on health data (glucose, BMI, blood pressure, age).",
+      "tech": ["Python", "Scikit-learn", "Pandas", "Numpy"]
+    }
+  ],
+  "internship": [
+    {
+      "company": "Gonagoor Technologies",
+      "role": "Software Development Intern",
+      "duration": "Nov 2024 – Dec 2024",
+      "work": [
+        "Developed a Typing Accuracy Checker with real-time keypress feedback.",
+        "Created a Major → Minor Mapping Converter using HTML, JS, CSS, and Express.js.",
+        "Gained hands-on experience with front-end technologies and version control."
+      ]
+    }
+  ],
+  "skills": {
+    "Programming Languages": ["Java", "JavaScript"],
+    "Web Technologies": ["HTML", "CSS","Tailwind css"],
+    "Frameworks": ["React"],
+    "Databases": ["MySQL", "SQL","MongoDB"],
+    "Core Concepts": ["OOP", "Data Structures & Algorithms", "Machine Learning"],
+    "Soft Skills": ["Teamwork", "Communication", "Problem Solving"]
+  },
+  "achievements": [
+    "Solved 100+ coding challenges on LeetCode & GeeksforGeeks.",
+    "Participated in CodeSprint 2024 Hackathon, showcasing teamwork and problem-solving."
+  ],
+  "contact": {
+    "email": "sunilrana0415@gmail.com",
+    "phone": "+91-7667947823",
+    "linkedin": "https://www.linkedin.com/in/sunil-rana-240113281/"
+  }
+}
