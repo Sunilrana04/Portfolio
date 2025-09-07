@@ -38,24 +38,26 @@ const Hero = () => {
 
   // ✅ Universal Download Function for Mobile + Desktop
   const handleDownload = () => {
-    // Create a temporary anchor tag
-    const link = document.createElement('a');
-    link.href = Resume;
-    link.download = 'SunilRana_Resume.pdf';
-    
-    // Append to body (required for Firefox)
+  const pdfUrl = "/SunilRanaResumes(14).pdf"; // Public folder path
+
+  // For mobile Safari / Chrome fallback
+  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    // Open PDF in a new tab (user can manually download)
+    window.open(pdfUrl, "_blank");
+  } else {
+    // Desktop: force download
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "SunilRana_Resume(14).pdf";
     document.body.appendChild(link);
-    
-    // Trigger the download
     link.click();
-    
-    // Clean up
     document.body.removeChild(link);
-    
-    // Show success message
-    setShowDownloadMessage(true);
-    setTimeout(() => setShowDownloadMessage(false), 3000);
-  };
+  }
+
+  // Optional: show download message
+  setShowDownloadMessage(true);
+  setTimeout(() => setShowDownloadMessage(false), 3000);
+};
 
   return (
     <section
