@@ -38,7 +38,7 @@ const Hero = () => {
 
   // ✅ Universal Download Function for Mobile + Desktop
   const handleDownload = () => {
-  const pdfUrl = "/SunilRanaResumes(14).pdf"; // Public folder path
+  const pdfUrl = "/SunilRanaResumes.pdf"; // Public folder path
 
   // For mobile Safari / Chrome fallback
   if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -48,7 +48,7 @@ const Hero = () => {
     // Desktop: force download
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "SunilRana_Resume(14).pdf";
+    link.download = "SunilRana_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
