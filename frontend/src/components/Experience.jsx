@@ -16,7 +16,7 @@ const experiences = [
     type: 'Internship',
     description:
       "Worked as a Frontend Developer Intern, contributing to the design and development of responsive and interactive UI components using React and Tailwind CSS. Collaborated closely with backend developers to integrate RESTful APIs, ensuring seamless communication between frontend and backend. Gained hands-on experience in version control, agile workflows, and project planning, enhancing my practical skills in modern web development and teamwork.",
-    link: 'https://www.techsolutions.com',
+    link: 'https://gonagoor.com',
   },
 ];
 

@@ -55,6 +55,7 @@ export default function AIChat() {
       }
 
       // Existing backend call remains unchanged
+      
       const res = await fetch("http://localhost:5000/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

@@ -18,9 +18,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/johnsmith', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/johnsmith', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:john.smith@example.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/Sunilrana04', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sunil-rana-240113281/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:sunilrana0415@gmail.com', label: 'Email' }
   ];
 
   const scrollToSection = (href) => {
