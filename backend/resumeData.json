@@ -48,13 +48,15 @@
     }
   ],
   "skills": {
-    "Programming Languages": ["Java", "JavaScript"],
-    "Web Technologies": ["HTML", "CSS","Tailwind css"],
-    "Frameworks": ["React"],
-    "Databases": ["MySQL", "SQL","MongoDB"],
-    "Core Concepts": ["OOP", "Data Structures & Algorithms", "Machine Learning"],
-    "Soft Skills": ["Teamwork", "Communication", "Problem Solving"]
-  },
+  "Programming Languages": ["Java", "JavaScript"],
+  "Web Technologies": ["HTML", "CSS", "Tailwind CSS"],
+  "Frameworks & Libraries": ["React", "Express.js"],
+  "Backend & Runtime": ["Node.js"],
+  "Databases": ["MySQL", "SQL", "MongoDB"],
+  "Core Concepts": ["OOP", "Data Structures & Algorithms", "Machine Learning"],
+  "Tools": ["VS Code", "Git", "Postman"],
+  "Soft Skills": ["Teamwork", "Communication", "Problem Solving"]
+},
   "achievements": [
     "Solved 100+ coding challenges on LeetCode & GeeksforGeeks.",
     "Participated in CodeSprint 2024 Hackathon, showcasing teamwork and problem-solving."

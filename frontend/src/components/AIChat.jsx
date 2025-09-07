@@ -8,7 +8,8 @@ export default function AIChat() {
     {
       id: Date.now(),
       role: "bot",
-      content: "👋 Hi! I'm your AI assistant. You can ask me about Sunil Rana, his skills, projects, or how to connect with him.",
+      content:
+        "👋 Hi! I'm your AI assistant. You can ask me about Sunil Rana, his skills, projects, or how to connect with him.",
     },
   ]);
   const [typing, setTyping] = useState(false);
@@ -54,9 +55,8 @@ export default function AIChat() {
         );
       }
 
-      // Existing backend call remains unchanged
-      
-      const res = await fetch("http://localhost:5000/api/chat", {
+      // ✅ Backend call (pahle jaisa)
+      const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: [...messages, newMessage] }),
@@ -88,20 +88,22 @@ export default function AIChat() {
         <button
           onClick={() => setOpen(true)}
           className="fixed bottom-6 right-6 w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition"
-          style={{ 
+          style={{
             background: "transparent",
-            animation: "bounce 4s ease-in-out infinite"
+            animation: "bounce 4s ease-in-out infinite",
           }}
         >
           <img
             src="bot.png"
             alt="Chat Bot"
             className="w-16 h-16 object-contain"
-            style={{ filter: "drop-shadow(0 5px 12px rgba(99, 102, 241, 0.6))" }}
+            style={{
+              filter: "drop-shadow(0 5px 12px rgba(99, 102, 241, 0.6))",
+            }}
           />
         </button>
       )}
-      
+
       {/* Chat Window */}
       {open && (
         <div className="fixed bottom-6 right-6 w-80 h-[500px] bg-white dark:bg-gray-900 backdrop-blur-md border border-gray-200 dark:border-gray-700 rounded-2xl shadow-2xl flex flex-col animate-fadeIn">
@@ -115,7 +117,8 @@ export default function AIChat() {
                   {
                     id: Date.now(),
                     role: "bot",
-                    content: "👋 Hi! I'm your AI assistant. You can ask me about Sunil Rana, his skills, projects, or how to connect with him.",
+                    content:
+                      "👋 Hi! I'm your AI assistant. You can ask me about Sunil Rana, his skills, projects, or how to connect with him.",
                   },
                 ]);
               }}
@@ -153,21 +156,20 @@ export default function AIChat() {
             )}
           </div>
 
-          {/* Suggestions (only at start) */}
-          {messages.length === 1 && (
-            <div className="p-3 flex flex-wrap gap-2">
-              {suggestions.map((s, i) => (
-                <button
-                  key={i}
-                  onClick={() => handleSend(s)}
-                  className="px-3 py-1 text-xs rounded-full bg-indigo-50 text-indigo-700 hover:bg-indigo-100 dark:bg-gray-800 dark:text-indigo-400"
-                >
-                  {s}
-                </button>
-              ))}
-            </div>
-          )}
-
+         {/* Suggestions (only at start) */}
+{messages.length === 1 && (
+  <div className="p-3 flex flex-wrap gap-2">
+    {suggestions.map((s, i) => (
+      <button
+        key={i}   // <-- Yahi badalna hai
+        onClick={() => handleSend(s)}
+        className="px-3 py-1 text-xs rounded-full bg-indigo-50 text-indigo-700 hover:bg-indigo-100 dark:bg-gray-800 dark:text-indigo-400"
+      >
+        {s}
+      </button>
+    ))}
+  </div>
+)}
           {/* Input Box */}
           <div className="p-3 border-t dark:border-gray-700 flex gap-2">
             <input
@@ -186,7 +188,7 @@ export default function AIChat() {
           </div>
         </div>
       )}
-      
+
       {/* Intermediate Speed CSS animation */}
       <style>
         {`
@@ -210,5 +212,5 @@ export default function AIChat() {
         `}
       </style>
     </div>
-  ); 
+  );
 }
