@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
-import AIChat from "./AIChat"; // ✅ Keep chatbot
+import AIChat from "./AIChat";
 import Resume from "../assets/SunilRanaResumes.pdf";
 import profilePic from "../assets/Passport.jpeg";
-
-
-
 
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Full Stack Developer & Machine Learning ";
   const [index, setIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [showDownloadMessage, setShowDownloadMessage] = useState(false);
 
   useEffect(() => {
     const speed = isDeleting ? 80 : 120;
@@ -38,32 +36,42 @@ const Hero = () => {
     }
   };
 
-  // ✅ Force Download for Mobile + Desktop
-  const handleDownload = async () => {
-  try {
-    const response = await fetch(Resume);
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
-
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "SunilRana_Resume.pdf"; // ✅ Force download name
+  // ✅ Universal Download Function for Mobile + Desktop
+  const handleDownload = () => {
+    // Create a temporary anchor tag
+    const link = document.createElement('a');
+    link.href = Resume;
+    link.download = 'SunilRana_Resume.pdf';
+    
+    // Append to body (required for Firefox)
     document.body.appendChild(link);
+    
+    // Trigger the download
     link.click();
-
-    // Cleanup
+    
+    // Clean up
     document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
-  } catch (error) {
-    console.error("Resume download failed:", error);
-  }
-};
+    
+    // Show success message
+    setShowDownloadMessage(true);
+    setTimeout(() => setShowDownloadMessage(false), 3000);
+  };
 
   return (
     <section
       id="home"
       className="relative flex items-center justify-center min-h-screen pt-24 lg:pt-25 overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50"
     >
+      {/* Download success message */}
+      {showDownloadMessage && (
+        <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-white px-6 py-3 rounded-full shadow-lg z-50 flex items-center space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+          </svg>
+          <span>Resume download started!</span>
+        </div>
+      )}
+
       {/* Background elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20"></div>
       <div className="absolute bottom-20 right-10 w-24 h-24 bg-indigo-200 rounded-full opacity-20"></div>
@@ -102,7 +110,7 @@ const Hero = () => {
                 <path
                   fillRule="evenodd"
                   d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clipRule="evenodd" 
+                  clipRule="evenodd"
                 />
               </svg>
               <span>Bangalore, India</span>
