@@ -3,6 +3,9 @@ import AIChat from "./AIChat"; // ✅ Keep chatbot
 import Resume from "../assets/SunilRanaResumes.pdf";
 import profilePic from "../assets/Passport.jpeg";
 
+
+
+
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Full Stack Developer & Machine Learning ";
@@ -36,14 +39,25 @@ const Hero = () => {
   };
 
   // ✅ Force Download for Mobile + Desktop
-  const handleDownload = () => {
+  const handleDownload = async () => {
+  try {
+    const response = await fetch(Resume);
+    const blob = await response.blob();
+    const url = window.URL.createObjectURL(blob);
+
     const link = document.createElement("a");
-    link.href = Resume;
-    link.setAttribute("download", "SunilRana_Resume.pdf");
+    link.href = url;
+    link.download = "SunilRana_Resume.pdf"; // ✅ Force download name
     document.body.appendChild(link);
     link.click();
+
+    // Cleanup
     document.body.removeChild(link);
-  };
+    window.URL.revokeObjectURL(url);
+  } catch (error) {
+    console.error("Resume download failed:", error);
+  }
+};
 
   return (
     <section
