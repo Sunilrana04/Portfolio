@@ -11,7 +11,7 @@ const experiences = [
   {
     company: 'Gonagoor Technologie Solutions Ltd.',
     role: 'Frontend Developer Intern',
-    duration: 'Jan 2023 - Apr 2023',
+    duration: 'Nov 2024 - Dec 2024',
     location: 'Offline',
     type: 'Internship',
     description:
