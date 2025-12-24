@@ -33,7 +33,7 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_pmttxnd',   // Your Service ID
+        'service_verm74j',   // Your Service ID
         'template_eutml5c',  // Your Template ID
         formData,            // Form data
         'ZBqS3QgPoR4PcDaZs'  // Your Public Key

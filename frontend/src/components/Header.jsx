@@ -63,11 +63,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <button
-              onClick={() => scrollToSection('#home')}
-              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-            >
-              Portfolio
-            </button>
+  onClick={() => scrollToSection('#home')}
+  className="text-2xl font-bold bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-md transition-colors duration-300"
+>
+  Portfolio
+</button>
           </div>
 
           {/* Desktop Navigation */}

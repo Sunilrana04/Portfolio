@@ -1,69 +1,106 @@
 {
-  "name": "Sunil Rana",
-  "title": "MCA Student & Full Stack Developer",
-  "education": [
-    {
-      "degree": "Masters of Computer Applications",
-      "institution": "Dayananda Sagar College of Engineering (DSCE), Bangalore",
-      "duration": "Aug 2023 – Present",
-      "cgpa": "8.96 / 10.00"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Excel Analysis Platform (MERN + ML)",
-      "latest": true,
-      "description": "Developed a full-stack MERN application to upload Excel files and provide insights, charts, summaries, row-level data, metadata, and analytics. Implemented JWT authentication with email-based password reset and integrated machine learning for advanced data insights.",
-      "tech": ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Machine Learning"]
-    },
-    {
-      "name": "Expense Tracker (MERN)",
-      "latest": false,
-      "description": "Built an end-to-end MERN expense tracker with JWT authentication, interactive dashboard, and category-based expense tracking.",
-      "tech": ["MongoDB", "Express.js", "React", "Node.js", "JWT"]
-    },
-    {
-      "name": "AI Chatbot (Gemini API)",
-      "latest": false,
-      "description": "Developed a chatbot feature with fresh conversation resets, chat history, and a responsive UI for an enhanced experience.",
-      "tech": ["React", "Gemini API", "Node.js", "Express.js"]
-    },
-    {
-      "name": "Diabetes Prediction (Machine Learning)",
-      "latest": false,
-      "description": "Trained ML models (Linear Regression, Multiple Regression, Polynomial Regression) to predict diabetes based on health data (glucose, BMI, blood pressure, age).",
-      "tech": ["Python", "Scikit-learn", "Pandas", "Numpy"]
-    }
-  ],
-  "internship": [
-    {
-      "company": "Gonagoor Technologies",
-      "role": "Software Development Intern",
-      "duration": "Nov 2024 – Dec 2024",
-      "work": [
-        "Developed a Typing Accuracy Checker with real-time keypress feedback.",
-        "Created a Major → Minor Mapping Converter using HTML, JS, CSS, and Express.js.",
-        "Gained hands-on experience with front-end technologies and version control."
-      ]
-    }
-  ],
-  "skills": {
-  "Programming Languages": ["Java", "JavaScript"],
-  "Web Technologies": ["HTML", "CSS", "Tailwind CSS"],
-  "Frameworks & Libraries": ["React", "Express.js"],
-  "Backend & Runtime": ["Node.js"],
-  "Databases": ["MySQL", "SQL", "MongoDB"],
-  "Core Concepts": ["OOP", "Data Structures & Algorithms", "Machine Learning"],
-  "Tools": ["VS Code", "Git", "Postman"],
-  "Soft Skills": ["Teamwork", "Communication", "Problem Solving"]
-},
-  "achievements": [
-    "Solved 100+ coding challenges on LeetCode & GeeksforGeeks.",
-    "Participated in CodeSprint 2024 Hackathon, showcasing teamwork and problem-solving."
-  ],
-  "contact": {
+  "personal_info": {
+    "name": "Sunil Rana",
+    "profession": "Software Engineer & Full Stack Developer",
     "email": "sunilrana0415@gmail.com",
     "phone": "+91-7667947823",
-    "linkedin": "https://www.linkedin.com/in/sunil-rana-240113281/"
+    "location": "Bangalore, India",
+    "linkedin": "linkedin.com/in/sunil-rana-240113281",
+    "github": "https://github.com/Sunilrana04",
+    "about_me": "I am a passionate software engineer who loves building smart web applications using modern technologies. I specialize in creating websites that can predict health issues and analyze data automatically. I enjoy solving real-world problems through coding and machine learning."
+  },
+  
+  "what_i_do": {
+    "specialization": "Full Stack Web Development + Machine Learning",
+    "description": "I build complete web applications from frontend to backend, and also create AI models that can predict things like heart disease. I make websites that are fast, secure, and easy to use.",
+    "key_strengths": [
+      "Building websites with React and Node.js",
+      "Creating AI prediction models",
+      "Data analysis and visualization",
+      "Database management",
+      "Problem solving"
+    ]
+  },
+
+  "projects_in_simple_words": {
+    "heart_iq": {
+      "name": "HEART IQ - Health Prediction App",
+      "what_it_does": "A website that can predict heart disease risk using artificial intelligence",
+      "how_it_helps": "Doctors and patients can check heart health risk quickly without complex tests",
+      "technologies_used": "React, Node.js, Python AI, MongoDB",
+      "achievements": [
+        "82% accurate predictions",
+        "40% faster processing",
+        "35% more user engagement"
+      ],
+      "duration": "Aug 2025 - Nov 2025"
+    },
+    
+    "excel_analytics": {
+      "name": "EXCEL ANALYTICS - Data Analysis Tool",
+      "what_it_does": "A platform that automatically analyzes Excel files and creates smart reports",
+      "how_it_helps": "Businesses can upload Excel files and get instant insights without manual work",
+      "technologies_used": "React, Node.js, Python, Pandas, NumPy",
+      "achievements": [
+        "60% faster decision making",
+        "50% less manual work",
+        "40% better charts and graphs"
+      ],
+      "duration": "Mar 2025 - Aug 2025"
+    }
+  },
+
+  "work_experience_simple": {
+    "zidio": {
+      "company": "ZIDIO DEVELOPMENT PVT. LTD",
+      "role": "Software Developer Intern",
+      "duration": "July 2025 - Sep 2025",
+      "what_i_did": [
+        "Built features for data analysis platform",
+        "Created file upload system for Excel files",
+        "Made charts and graphs for data visualization",
+        "Improved website speed by 25%"
+      ],
+      "skills": "React, Node.js, MongoDB, JavaScript, HTML5, CSS3 , Java , Docker"
+    }
+  },
+
+  "education_simple": {
+    "masters": {
+      "degree": "Master of Computer Applications (MCA)",
+      "college": "Dayananda Sagar College of Engineering, Bangalore",
+      "duration": "2023 - 2025",
+      "performance": "9.00/10 CGPA (Excellent)",
+      "status": "Completed"
+    }
+  },
+
+  "skills_categories": {
+    "programming_languages": ["Java", "JavaScript", "Python"],
+    "web_development": ["React.js", "Node.js", "Express.js", "HTML5", "CSS3"],
+    "databases": ["MySQL", "MongoDB"],
+    "machine_learning": ["Pandas", "NumPy", "scikit-learn"],
+    "tools": ["Git", "GitHub", "Postman", "Vercel"]
+  },
+
+  "achievements_simple": [
+    "Completed professional web development course",
+    "Participated in national coding competition (CodeSprint 2024)",
+    "Built AI projects that solve real health problems"
+  ],
+
+  "what_i_can_build": [
+    "Health prediction websites",
+    "Data analysis platforms", 
+    "Business dashboards",
+    "E-commerce websites",
+    "Real-time web applications"
+  ],
+
+  "contact_options": {
+    "for_collaboration": "Email or LinkedIn",
+    "for_projects": "GitHub or direct message",
+    "for_quick_chat": "Phone call or WhatsApp",
+    "preferred_method": "Email for formal communication"
   }
 }

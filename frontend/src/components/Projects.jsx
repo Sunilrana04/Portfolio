@@ -4,6 +4,7 @@ import excelAnalysis from "../assets/excel-analysis.png";
 import expenseTracker from "../assets/expense-tracker.png";
 import geminiClone from "../assets/gemini-clone.png";
 import diabeticPrediction from "../assets/diabetic-prediction.png";
+import heartIQ from "../assets/frontPage.png" 
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -11,6 +12,19 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Heart_IQ",
+      description:
+        "AI-powered heart disease prediction platform using MERN stack and scikit-learn, delivering real-time predictions with 82% model accuracy. Includes interactive dashboards, JWT authentication, and optimized data pipelines using Pandas and NumPy.",
+      image: heartIQ,
+      technologies: ["React", "Node.js", "MongoDB", "Express", "JWT", "Python", "scikit-learn", "Pandas", "NumPy"],
+      category: "Full Stack",
+      date: "Nov 2025",
+      github: "https://github.com/Sunilrana04/Heart_IQ-Application",
+      live: "#", // replace with live link if available
+      featured: true,
+    },
+    {
+      id: 2,
       title: "Excel Analysis Platform",
       description:
         "MERN full-stack + Machine learning (ML) application for uploading Excel files and generating insights, charts, and analytics. Includes JWT authentication and email-based password reset functionality.",
@@ -23,7 +37,7 @@ const Projects = () => {
       featured: true,
     },
     {
-      id: 2,
+      id: 3,
       title: "Expense Tracker Application",
       description:
         "Full-stack expense tracker solution with React, Node.js, and MongoDB. Features include user authentication, manage expense through own input data, and User dashboard.",
@@ -36,7 +50,7 @@ const Projects = () => {
       featured: true,
     },
     {
-      id: 3,
+      id: 4,
       title: "Gemini Dashboard",
       description:
         "Frontend-only React dashboard clone with Tailwind CSS. Features include collaborative AI chat",
@@ -49,7 +63,7 @@ const Projects = () => {
       featured: true,
     },
     {
-      id: 4,
+      id: 5,
       title: "Diabetic Prediction System",
       description:
         "Machine Learning-based diabetic prediction system using algorithms like Logistic Regression, Linear Regression, and Reinforcement Learning to predict risk levels based on patient data.",

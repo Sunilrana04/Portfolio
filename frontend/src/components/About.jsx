@@ -3,7 +3,7 @@ import { Code, Database, Globe, Smartphone, Award, Users, Cloud, Zap, Layout } f
 const About = () => {
 
 const highlights = [
-  { icon: <Code size={24} />, title: "Full Stack Development", description: "Proficient in React, Node.js, and cloud platforms" },
+  { icon: <Code size={24} />, title: "Full Stack Development", description: "Proficient in React, Node.js, and Machine learning Tools platforms" },
   { icon: <Database size={24} />, title: "Database Design", description: "Experience with SQL/NoSQL databases, data modeling" },
   { icon: <Globe size={24} />, title: "Web Technologies", description: "Expert in HTML5, CSS3, JavaScript, and frameworks" },
   { icon: <Smartphone size={24} />, title: "Machine learning", description: "Developing predictive models, analyzing data, and implementing AI solutions" },
@@ -26,7 +26,7 @@ const highlights = [
           </h2>
           <div className="w-20 h-1 bg-blue-500 mx-auto mt-4 mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A dedicated MCA student with a passion for technology and innovation
+             A passionate MCA graduate with strong expertise in full-stack development and applied machine learning
           </p>
         </div>
 
@@ -35,16 +35,15 @@ const highlights = [
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-gray-700 leading-relaxed">
-                I'm currently pursuing my Master of Computer Applications (MCA) with a focus on
-                modern software development practices. My journey in technology began with a
-                curiosity about how things work, which has evolved into a passion for creating
-                innovative solutions.
+               I completed my Master of Computer Applications (MCA) in 2025, specializing in modern
+        software development and emerging technologies. My journey in tech began with a deep
+        curiosity about how things work, which evolved into a passion for building intelligent,
+        scalable, and user-focused digital solutions.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                With hands-on experience in full-stack development, I enjoy working on projects that
-                challenge me to learn new technologies and solve complex problems. I'm particularly
-                interested in web development, cloud computing, and emerging technologies like AI
-                and machine learning.
+               Over time, I’ve gained hands-on experience in developing full-stack web applications using
+        the MERN stack and integrating data analytics with Python libraries such as Pandas and NumPy.
+        I enjoy turning ideas into functional products that create real-world impact.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 When I'm not coding, you can find me contributing to open-source projects,
@@ -57,8 +56,8 @@ const highlights = [
             <div className="grid grid-cols-3 gap-4 pt-4">
               {[
                 { value: '3+', label: 'Projects' },
-                { value: '3+', label: 'Years Learning' },
-                { value: '8.9', label: 'CGPA' },
+                { value: '5+', label: 'Years Learning' },
+                { value: '9.00/10', label: 'CGPA' },
               ].map((stat, index) => (
                 <div
                   key={index}

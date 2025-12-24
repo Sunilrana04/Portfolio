@@ -27,8 +27,7 @@ function App() {
         </main>
         <Footer />
 
-        {/* ✅ Always floating chatbot */}
-        {/* <AIChat /> */}
+        
       </div>
     </ThemeProvider>
   );
