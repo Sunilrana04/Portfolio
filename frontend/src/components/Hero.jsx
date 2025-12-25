@@ -3,6 +3,9 @@ import AIChat from "./AIChat";
 import Resume from "../assets/SunilRanaResumes.pdf";
 import profilePic from "../assets/Passport.png";
 
+
+
+
 const Hero = () => {
   const [typedText, setTypedText] = useState("");
   const fullText = "Full Stack Developer & Machine Learning ";
@@ -119,10 +122,9 @@ const Hero = () => {
 
           {/* Description */}
           <p className="max-w-2xl mx-auto text-lg text-gray-600 leading-relaxed">
-           Aspiring Software Engineer with strong expertise in the MERN stack and applied Machine Learning, 
-  skilled in full-stack development and passionate about building innovative, data-driven software products 
-  that solve real-world challenges. I aim to leverage my technical skills in web technologies, databases, 
-  and AI integration to develop impactful and scalable solutions.
+            Passionate about building innovative web solutions and always eager to learn new
+            technologies. As an MCA student, I have been exploring the fundamentals of computer
+            science along with hands-on experience in Full Stack Development.  
           </p>
 
           {/* CTA Buttons */}

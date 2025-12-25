@@ -7,18 +7,18 @@ import {
 } from 'lucide-react';
 
 const Experience = () => {
-  const experiences = [
-    {
-      company: 'Zidio Development Pvt. Ltd',
-      role: 'Software Development Intern',
-      duration: 'July 2025 - September 2025',
-      location: 'Online',
-      type: 'Internship',
-      description:
-        "Developed core modules of the Excel Analytics Platform using the MERN stack integrated with Pandas and NumPy for backend data processing. Implemented Excel file upload, API-driven backend processing, and real-time chart visualization. Collaborated on RESTful API development and optimized MongoDB queries, enhancing data retrieval efficiency by 25%. This internship strengthened my full-stack development, data analytics, and teamwork skills.",
-      link: 'https://www.zidio.in/',
-    },
-  ];
+const experiences = [
+  {
+    company: 'Gonagoor Technologie Solutions Ltd.',
+    role: 'Frontend Developer Intern',
+    duration: 'Jan 2023 - Apr 2023',
+    location: 'Offline',
+    type: 'Internship',
+    description:
+      "Worked as a Frontend Developer Intern, contributing to the design and development of responsive and interactive UI components using React and Tailwind CSS. Collaborated closely with backend developers to integrate RESTful APIs, ensuring seamless communication between frontend and backend. Gained hands-on experience in version control, agile workflows, and project planning, enhancing my practical skills in modern web development and teamwork.",
+    link: 'https://gonagoor.com',
+  },
+];
 
   const getTypeColor = (type) => {
     switch (type) {
